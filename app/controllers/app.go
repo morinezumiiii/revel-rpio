@@ -16,9 +16,9 @@ func (c App) Index(pinValue bool) revel.Result {
 	return c.Render(pinValue)
 }
 
-func (c App) Gpio13(pinValue bool) revel.Result {
+func (c App) Gpio17(pinValue bool) revel.Result {
 
-	fmt.Println("GPIO13 pin value is: ", pinValue)
+	fmt.Println("GPIO17 pin value is: ", pinValue)
 	if err := rpio.Open(); err != nil {
 		fmt.Println(err)
 	} else {
